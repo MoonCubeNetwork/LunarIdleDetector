@@ -1,0 +1,12 @@
+name: '${project.name}'
+version: '${project.version}'
+authors: ${authors}
+website: '${project.url}'
+main: pl.lunarhost.lunaridledetector.LunarIdleDetectorPlugin
+api-version: '${apiVersion}'
+description: Automatically kicks players after a customizable period of inactivity.
+
+permissions:
+  lunaridledetector.bypass:
+    description: "Zapobiega wyrzucaniu gracza za nieaktywność."
+    default: false

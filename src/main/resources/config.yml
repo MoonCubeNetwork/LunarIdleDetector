@@ -1,0 +1,2 @@
+kick-time: 10 # czas w minutach
+kick-message: "Zostałeś wyrzucony za %time% minut nieaktywności!"
