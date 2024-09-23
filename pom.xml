@@ -5,7 +5,7 @@
 
     <groupId>pl.lunarhost</groupId>
     <artifactId>LaunarIdleDetector</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>LaunarIdleDetector</name>
 
     <properties>

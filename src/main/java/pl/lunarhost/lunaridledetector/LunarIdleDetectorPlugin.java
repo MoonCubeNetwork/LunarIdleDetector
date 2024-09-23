@@ -43,12 +43,10 @@ public class LunarIdleDetectorPlugin extends JavaPlugin implements Listener {
                     if (lastActivity.containsKey(uuid)) {
                         long lastActive = lastActivity.get(uuid);
                         if (now - lastActive > kickTime) {
-                            if (!player.hasPermission("idlekick.bypass")) {
-                                String kickMessage = getConfig().getString("kick-message");
-                                String formattedMessage = kickMessage.replace("%time%", String.valueOf(kickTime / 60000));
-                                player.kickPlayer(formattedMessage);
-                                lastActivity.remove(uuid);
-                            }
+                            String kickMessage = getConfig().getString("kick-message");
+                            String formattedMessage = kickMessage.replace("%time%", String.valueOf(kickTime / 60000));
+                            player.kickPlayer(formattedMessage);
+                            lastActivity.remove(uuid);
                         }
                     } else {
                         lastActivity.put(uuid, now);
